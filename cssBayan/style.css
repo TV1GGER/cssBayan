@@ -1,20 +1,85 @@
-
-
-.bayan{
-    max-width: 30vw;
-    margin: 30vh auto;
-
+html {
+    width:100vw;
+    overflow-x:hidden;
+    
+  } 
+  body{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    color: rgb(172, 255, 63);
+    font-weight: bold;
+    font-size: 1.3em;
+    overflow-x:hidden;
 }
 
-/*.bayan-item{
-    border: 1px solid #9c9c9c67;
-}*/
+footer{
+    height: 0;
+    display: none;
+}
 
+.bayan{
+    max-width: 40vw;
+    margin: 0 auto;
+}
+
+.bayan:hover{
+    max-width: 40vw;
+    margin: auto auto;
+    color: rgb(255, 255, 255);
+    transition: .3s; 
+}
+
+.bayan:hover .close {
+    opacity: 1;
+    transform: scale(1.0);
+    visibility: visible;
+    transform: rotate(45deg);
+    transition: .3s; 
+}
+.bayan-name{
+    color: black;
+}
+.bayan-item{
+    position: static;
+    cursor: pointer;
+}
+.bayan-label1:hover #title1{
+    position: static;
+    cursor: pointer;
+    padding: 10px 15px;
+background-color: #5fe25fb7;
+transition: .42s;
+}
+
+.bayan-label2:hover #title2{
+    position: static;
+    cursor: pointer;
+    padding: 10px 15px;
+background-color: #5fe25fb7;
+transition: .42s;
+}
+
+.bayan-label3:hover #title3{
+    position: static;
+    cursor: pointer;
+    padding: 10px 15px;
+background-color:#5fe25fb7;
+transition: .42s;
+}
+
+.bayan-label4:hover #title4{
+    position: static;
+    cursor: pointer;
+    padding: 10px 15px;
+background-color: #5fe25fb7;
+transition: .42s;
+}
 .bayan-title{
     display: flex;
     justify-content: space-between;
-    color: rgb(255, 255, 255);
-    background-color: #9c9c9c67;
+    position: static;
+    background-color: #4b4b4bbe;
     cursor: pointer;
     padding: 10px 15px;
     transition: .42s; 
@@ -22,7 +87,10 @@
 
 .close{
     display: block;
+    visibility: hidden;
     position: static;
+    opacity: 0;
+    transform: scale(0);
     width: 1rem;
     height: 1rem;
     transform: rotate(45deg);
@@ -40,10 +108,13 @@
    
    
 }*/
-.bayan-title:hover{
-background-color: #43864381;
-color:black;
-}
+/*.bayan-title:hover{
+    position: static;
+    cursor: pointer;
+    padding: 10px 15px;
+background-color: #5fe25fb7;
+transition: .42s;
+}*/
 
 .bayan-input{
     display: block;
@@ -55,29 +126,58 @@ color:black;
 
 .bayan-input:checked ~ * .close {
     display: block;
-    transition: .82s;
-   position: relative;
+   position: static;
+   opacity: 1;
+    transform: scale(1.0);
+    visibility: visible;
     width: 1rem;
     height: 1rem;
    transform: rotate(0deg);
    background-image: url("./assets/svg/close_32-32.svg");
-   
-   
+   transition: 0.43s;
+}
+
+.bayan-input:checked ~ .bayan-title {
+    position: static;
+    cursor: pointer;
+    padding: 10px 15px;
+    color: rgb(255, 255, 255);
+background-color: #5fe25fb7;
+transition: .42s;
+}
+
+.bayan-input:hover ~ * .close {
+    display: block;
+   position: static;
+   opacity: 1;
+    transform: scale(1.0);
+    visibility: visible;
+    width: 1rem;
+    height: 1rem;
+   transform: rotate(0deg);
+   background-image: url("./assets/svg/close_32-32.svg");
+   transition: 0.43s;
 }
 .bayan-input:checked ~ .bayan-1-text {
-    display: block;
-    width: 100%;
-    height: 100%;
     opacity: 1;
-    overflow:visible;
-    /*visibility: visible;*/
-    transition: .4s;
+    transform: scale(1.0);
+    visibility: visible;
+    height: 100%;
+    transition: 1.00s;
     border: 1px solid #9c9c9c67;
     color: rgb(116, 204, 0);
     font-size: 16px;
-    /*padding: 10px 15px;*/
-    
-   
+}
+
+.bayan-input:hover ~ .bayan-1-text {
+    opacity: 1;
+    transform: scale(1.0);
+    visibility: visible;
+    height: 100%;
+    transition: 1.00s;
+    border: 1px solid #9c9c9c67;
+    color: rgb(116, 204, 0);
+    font-size: 16px;
 }
 /*.bayan-input:checked ~ .close::after{
     display: block;
@@ -88,36 +188,40 @@ color:black;
    background-image: url("./assets/svg/close_32-32.svg");
 }*/
 .bayan-1-text{
-    display: block;
-    width: 0;
-    height: 0;
-    overflow: hidden;
+    visibility:hidden;
     opacity: 0;
-  /*visibility:hidden;*/
+    transition: 0.43s;
+    height: 0;
     border: 1px solid #9c9c9c67;
     color: rgb(116, 204, 0);
+    background-color: white;
     font-size: 16px;
-    /*padding: 10px 15px;*/
-    transition: .4s;
+    transform: scale(0.5);
+    text-align: center;
+    overflow: hidden;
 }
 
 .difficult-tasks{
     margin: auto auto;
     position: static;
     transition: .4s;
+    
 }
 
 .recursion-in-action{
-    margin: 15% 0 15% 15%;
+    margin: auto auto;
     position: static;
+    transition: .4s;
 }
 
 .reverse-array{
-    margin: 15% 0 15% 15%;
+    margin: auto auto;
     position: static;
+    transition: .4s;
 }
 
 .stack-does-not-work{
-    margin: 15% 0 15% 15%;
+    margin: auto auto;
     position: static;
+    transition: .4s;
 }
