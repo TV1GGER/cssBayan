@@ -3,7 +3,7 @@
     scroll-behavior: smooth;
 }}  
 html {
-    max-width:1920px;
+    width:100vw;
     position: static;
     overflow-x:hidden;
     min-height: 100%;
@@ -236,14 +236,93 @@ transition: .42s;
     position: static;
     transition: .4s;
 }
+@media screen and (min-width: 1920px) {
+    @media (prefers-reduced-motion: no-preference) { 
+        :root {
+        scroll-behavior: smooth;
+    }}  
+    html {
+        width:100vw;
+        margin: 0 auto;
+        position: static;
+        padding: 0;
+        top: 0; left: 0; bottom: 0; right: 0;
+        min-height: 100%;
+        overflow-x:hidden;
+      } 
+    body{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        color: rgb(172, 255, 63);
+        font-weight: bold;
+        font-size: 2.6em;
+        /*background: linear-gradient(to right, #a2eea0, #535556);*/
+        overflow-x:hidden;
+    }
 
+    .bayan{
+        max-width: 70vw;
+        margin: 0 auto;
+    }
+    .bayan:hover{
+        max-width: 70vw;
+        margin: 0 auto;
+    }
+    
+    .bayan-title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: static;
+        background-color: #4b4b4bbe;
+        cursor: pointer;
+        padding: 10px 15px;
+        transition: .42s; 
+    }
+    
+    .close{
+        display: block;
+        visibility: hidden;
+        position: static;
+        opacity: 0;
+        transform: scale(0);
+        width: 1.5rem;
+        height: 1.5rem;
+        transform: rotate(45deg);
+        transition: .82s;
+        background-image: url("./assets/svg/close_32-32.svg");
+        
+    }
+    .bayan-input:checked ~ .bayan-1-text {
+        opacity: 1;
+        transform: scale(1.0);
+        visibility: visible;
+        height: 100%;
+        transition: 1.00s;
+        border: 1px solid #9c9c9c67;
+        color: rgb(116, 204, 0);
+    }
+    .bayan-input:checked ~ * .close {
+        display: block;
+       position: static;
+       opacity: 1;
+        transform: scale(1.0);
+        visibility: visible;
+        width: 1.5rem;
+        height: 1.5rem;
+       transform: rotate(0deg);
+       background-image: url("./assets/svg/close_32-32.svg");
+       transition: 0.43s;
+    }
+}
 @media screen and (max-width: 820px) {
     @media (prefers-reduced-motion: no-preference) { 
         :root {
         scroll-behavior: smooth;
     }}  
     html {
-        width: 820px;
+        width:100vw;
         margin: 0 auto;
         position: static;
         padding: 0;
@@ -291,7 +370,7 @@ transition: .42s;
         scroll-behavior: smooth;
     }}  
     html {
-        width: 320px;
+        width:100vw;
         margin: 0 auto;
         position: static;
         padding: 0;
