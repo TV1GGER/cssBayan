@@ -1,0 +1,500 @@
+@media (prefers-reduced-motion: no-preference) { 
+    :root {
+    scroll-behavior: smooth;
+}}  
+html {
+    width:100vw;
+    position: static;
+    overflow-x:hidden;
+    min-height: 100%;
+    
+    
+  } 
+  body{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    color: rgb(172, 255, 63);
+    font-weight: bold;
+    font-size: 1.3em;
+    overflow-x:hidden;
+    background: linear-gradient(to right, #a2eea0, #535556);
+}
+
+footer{
+    height: 0;
+    display: none;
+}
+
+.bayan{
+    max-width: 40vw;
+    margin: 0 auto;
+}
+
+
+
+.bayan-name{
+    color: black;
+}
+.bayan-item{
+    position: static;
+    cursor: pointer;
+}
+
+.bayan-title{
+    display: flex;
+    justify-content: space-between;
+    position: static;
+    background-color: #4b4b4bbe;
+    cursor: pointer;
+    padding: 10px 15px;
+    transition: .42s; 
+}
+
+.close{
+    display: block;
+    visibility: hidden;
+    position: static;
+    opacity: 0;
+    transform: scale(0);
+    width: 1em;
+    height: 1em;
+    transform: rotate(45deg);
+    transition: .82s;
+    background-image: url("./assets/svg/close_32-32.svg");
+}
+
+.bayan-input{
+    display: block;
+    width: 0;
+    height: 0;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+#bayan-1:checked ~ * #close1 {
+    display: block;
+   position: static;
+   opacity: 1;
+    transform: scale(1.0);
+    visibility: visible;
+    width: 1em;
+    height: 1em;
+   transform: rotate(0deg);
+   transition: 0.43s;
+}
+
+#bayan-2:checked ~ * #close2 {
+    display: block;
+   position: static;
+   opacity: 1;
+    transform: scale(1.0);
+    visibility: visible;
+    width: 1em;
+    height: 1em;
+   transform: rotate(0deg);
+   transition: 0.43s;
+}
+
+#bayan-3:checked ~ * #close3 {
+    display: block;
+   position: static;
+   opacity: 1;
+    transform: scale(1.0);
+    visibility: visible;
+    width: 1em;
+    height: 1em;
+   transform: rotate(0deg);
+   transition: 0.43s;
+}
+
+#bayan-4:checked ~ * #close4 {
+    display: block;
+   position: static;
+   opacity: 1;
+    transform: scale(1.0);
+    visibility: visible;
+    width: 1em;
+    height: 1em;
+   transform: rotate(0deg);
+   transition: 0.43s;
+}
+
+.bayan-input:checked ~ .bayan-title {
+    position: static;
+    cursor: pointer;
+    padding: 10px 15px;
+    color: rgb(255, 255, 255);
+background-color: #5fe25fb7;
+transition: .42s;
+}
+
+
+.bayan-input:checked ~ .bayan-1-text {
+    opacity: 1;
+    transform: scale(1.0);
+    visibility: visible;
+    height: 100%;
+    transition: 1.00s;
+    border: 1px solid #9c9c9c67;
+    font-size: 16px;
+}
+
+
+.bayan-label1:active #title1 {
+    color: blue;
+}
+.bayan-label2:active #title2 {
+    color: blue;
+}
+.bayan-label3:active #title3 {
+    color: blue;
+}
+.bayan-label4:active #title4 {
+    color:blue;
+}
+
+.bayan-label1:active .close{
+    background-image: url("./assets/svg/close_blue_32-32.svg");
+ }
+ .bayan-label2:active .close{
+    background-image: url("./assets/svg/close_blue_32-32.svg");
+ }
+ .bayan-label3:active .close{
+    background-image: url("./assets/svg/close_blue_32-32.svg");
+ }
+ .bayan-label4:active .close{
+    background-image: url("./assets/svg/close_blue_32-32.svg");
+ }
+
+.bayan-1-text{
+    visibility:hidden;
+    opacity: 0;
+    transition: 0.43s;
+    height: 0;
+    border: 1px solid #9c9c9c67;
+    background-color: white;
+    transform: scale(0.5);
+    text-align: center;
+    overflow: hidden;
+}
+
+.difficult-tasks{
+    margin: auto auto;
+    position: static;
+    transition: .4s;
+    
+}
+
+.recursion-in-action{
+    margin: auto auto;
+    position: static;
+    transition: .4s;
+}
+
+.reverse-array{
+    margin: auto auto;
+    position: static;
+    transition: .4s;
+}
+
+.stack-does-not-work{
+    margin: auto auto;
+    position: static;
+    transition: .4s;
+}
+
+@media (hover: hover) {
+
+    .bayan:hover{
+        max-width: 40vw;
+        margin: auto auto;
+        color: rgb(255, 255, 255);
+        transition: .3s; 
+    }
+    
+    .bayan:hover .close {
+        opacity: 1;
+        transform: scale(1.0);
+        visibility: visible;
+        transform: rotate(45deg);
+        transition: .3s; 
+    }
+    
+.bayan-label1:hover #title1{
+    position: static;
+    cursor: pointer;
+    padding: 10px 15px;
+background-color: #5fe25fb7;
+transition: .42s;
+}
+
+.bayan-label2:hover #title2{
+    position: static;
+    cursor: pointer;
+    padding: 10px 15px;
+background-color: #5fe25fb7;
+transition: .42s;
+}
+
+.bayan-label3:hover #title3{
+    position: static;
+    cursor: pointer;
+    padding: 10px 15px;
+background-color:#5fe25fb7;
+transition: .42s;
+}
+
+.bayan-label4:hover #title4{
+    position: static;
+    cursor: pointer;
+    padding: 10px 15px;
+background-color: #5fe25fb7;
+transition: .42s;
+}
+
+.bayan-label1:hover #close1{
+    transform: rotate(0deg);
+    transition: .42s;
+}
+
+.bayan-label2:hover #close2{
+    transform: rotate(0deg);
+    transition: .42s;
+}
+
+.bayan-label3:hover #close3{
+    transform: rotate(0deg);
+    transition: .42s;
+}
+
+.bayan-label4:hover #close4{
+    transform: rotate(0deg);
+    transition: .42s;
+}
+
+.bayan-input:hover ~ * .close {
+    display: block;
+   position: static;
+   opacity: 1;
+    transform: scale(1.0);
+    visibility: visible;
+    width: 1em;
+    height: 1em;
+   transition: 0.43s;
+}
+
+.bayan-input:hover ~ .bayan-1-text {
+    opacity: 1;
+    transform: scale(1.0);
+    visibility: visible;
+    height: 100%;
+    transition: 1.00s;
+    border: 1px solid #9c9c9c67;
+}
+}
+
+@media (hover: none) {
+    .close {
+        display: block;
+       position: static;
+       opacity: 1;
+        transform: scale(1.0);
+        visibility: visible;
+        width: 1em;
+        height: 1em;
+       transform: rotate(45deg);
+       transition: 0.43s;
+    }
+}
+@media screen and (min-width: 1920px) {
+    @media (prefers-reduced-motion: no-preference) { 
+        :root {
+        scroll-behavior: smooth;
+    }}  
+    html {
+        width:100vw;
+        margin: 0 auto;
+        position: static;
+        padding: 0;
+        top: 0; left: 0; bottom: 0; right: 0;
+        min-height: 100%;
+        overflow-x:hidden;
+      } 
+    body{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        color: rgb(172, 255, 63);
+        font-weight: bold;
+        font-size: 2.6em;
+        overflow-x:hidden;
+    }
+
+    .bayan{
+        max-width: 70vw;
+        margin: 0 auto;
+    }
+    
+    .bayan-title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: static;
+        background-color: #4b4b4bbe;
+        cursor: pointer;
+        padding: 10px 15px;
+        transition: .42s; 
+    }
+    
+    
+    .bayan-input:checked ~ .bayan-1-text {
+        opacity: 1;
+        transform: scale(1.0);
+        visibility: visible;
+        height: 100%;
+        transition: 1.00s;
+        border: 1px solid #9c9c9c67;
+    }
+    .bayan-input:checked ~ * .close {
+        display: block;
+       position: static;
+       opacity: 1;
+        transform: scale(1.0);
+        visibility: visible;
+        width: 1.0em;
+        height: 1.0em;
+       transform: rotate(0deg);
+       transition: 0.43s;
+    }
+    
+}
+@media screen and (max-width: 1000px) {
+    @media (prefers-reduced-motion: no-preference) { 
+        :root {
+        scroll-behavior: smooth;
+    }}  
+    html {
+        width:100vw;
+        margin: 0 auto;
+        position: static;
+        padding: 0;
+        top: 0; left: 0; bottom: 0; right: 0;
+        min-height: 100%;
+        overflow-x:hidden;
+      } 
+    body{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        font-weight: bold;
+        font-size: 0.9em;
+        overflow-x:hidden;
+    }
+    .bayan{
+        max-width: 70vw;
+        margin: 0 auto;
+    }
+    
+
+    .bayan-label1:active #title1 {
+        color: white;
+    }
+    .bayan-label2:active #title2 {
+        color: white;
+    }
+    .bayan-label3:active #title3 {
+        color: white;
+    }
+    .bayan-label4:active #title4 {
+        color:white;
+    }
+    
+    .bayan-label1:active .close{
+        background-image: url("./assets/svg/close_32-32.svg");
+     }
+     .bayan-label2:active .close{
+        background-image: url("./assets/svg/close_32-32.svg");
+     }
+     .bayan-label3:active .close{
+        background-image: url("./assets/svg/close_32-32.svg");
+     }
+     .bayan-label4:active .close{
+        background-image: url("./assets/svg/close_blue_32-32.svg");
+     }
+}
+
+@media screen and (max-width: 460px) {
+    @media (prefers-reduced-motion: no-preference) { 
+        :root {
+        scroll-behavior: smooth;
+    }}  
+    html {
+        width:100vw;
+        margin: 0 auto;
+        position: static;
+        padding: 0;
+        top: 0; left: 0; bottom: 0; right: 0;
+        min-height: 100%;
+        overflow-x:hidden;
+      } 
+    body{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        font-weight: bold;
+        font-size: 0.6em;
+        overflow-x:hidden;
+    }
+
+    .bayan{
+        max-width: 70vw;
+        margin: 0 auto;
+    }
+    
+    .bayan-title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: static;
+        background-color: #4b4b4bbe;
+        cursor: pointer;
+        padding: 10px 15px;
+        transition: .42s; 
+    }
+    
+
+    .bayan-input:checked ~ .bayan-1-text {
+        opacity: 1;
+        transform: scale(1.0);
+        visibility: visible;
+        height: 100%;
+        transition: 1.00s;
+        border: 1px solid #9c9c9c67;
+    }
+    .bayan-label1:active #title1 {
+        color: white;
+    }
+    .bayan-label2:active #title2 {
+        color: white;
+    }
+    .bayan-label3:active #title3 {
+        color: white;
+    }
+    .bayan-label4:active #title4 {
+        color:white;
+    }
+    
+    .bayan-label1:active .close{
+        background-image: url("./assets/svg/close_32-32.svg");
+     }
+     .bayan-label2:active .close{
+        background-image: url("./assets/svg/close_32-32.svg");
+     }
+     .bayan-label3:active .close{
+        background-image: url("./assets/svg/close_32-32.svg");
+     }
+     .bayan-label4:active .close{
+        background-image: url("./assets/svg/close_32-32.svg");
+     }
+}
