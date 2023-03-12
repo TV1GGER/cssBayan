@@ -299,8 +299,6 @@ transition: .42s;
         transform: scale(1.0);
         visibility: visible;
         height: 100%;
-        width: 1.5rem;
-        height: 1.5rem;
         transition: 1.00s;
         border: 1px solid #9c9c9c67;
         color: rgb(116, 204, 0);
