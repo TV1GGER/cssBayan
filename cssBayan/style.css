@@ -342,7 +342,7 @@ transition: .42s;
     }
     
 }
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 1000px) {
     @media (prefers-reduced-motion: no-preference) { 
         :root {
         scroll-behavior: smooth;
